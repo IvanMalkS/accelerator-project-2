@@ -1,10 +1,11 @@
 // Vendor
-@import url('./vendor/normalize.scss');
+@import './vendor/normalize.scss';
 
 // Global
-@import url('./global/fonts.scss');
-@import url('global/variables.scss');
-@import url('./global/mixins.scss');
+@import './global/fonts.scss';
+@import './global/variables.scss';
+@import './global/mixins.scss';
+@import './global/global.scss';
 
 // Components
 
