@@ -1,0 +1,14 @@
+.button {
+  @include button-text-m($primary-text-color-light);
+  display: inline-block;
+  font-family: $primary-font;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  background-color: $secondary-background-color;
+  text-align: center;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 20px;
+}
