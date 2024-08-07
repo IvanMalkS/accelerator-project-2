@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html lang="ru" class="page" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
@@ -8,8 +8,41 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
-    <div data-test="header">header</div>
+  <body class="page__body">
+    <header class="main-header" data-test="header">
+      <div class="main-header__container">
+        <button class="main-header__burger burger" type="button">
+          <span class="burger__line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <a class="main-header__logo logo" href="#" aria-current="page">
+          <img class="logo__image" src="/__spritemap#sprite-logo-view" width="142" height="42" alt="Логотип LIFETOUR">
+        </a>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="/tours" class="main-nav__link">Туры</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/education" class="main-nav__link">Обучение</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/about-us" class="main-nav__link">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/reviews" class="main-nav__link">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/photos" class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/contacts" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:88000000000" class="main-header__phone">8 800 000-00-00</a>
+      </div>
+    </header>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
     <div data-test="training">training</div>
