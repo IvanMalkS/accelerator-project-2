@@ -1,8 +1,22 @@
 .burger {
-  display: block;
-  width: 26px;
-  height: 26px;
-  mask-size: 26px 26px;
-  mask-position: center;
-  mask-repeat: no-repeat;
+  display: none;
+}
+
+@media (max-width: $tablet-width-max) {
+  .burger {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+    background-image: url("/__spritemap#sprite-burger-closed-view");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .burger--open {
+    background-image: url("/__spritemap#sprite-burger-opened-view");
+  }
 }

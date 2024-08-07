@@ -214,12 +214,12 @@
 
 @mixin button-text-l($color: $primary-text-color-dark) {
   color: $color;
+  text-decoration: none;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -229,6 +229,7 @@
 
 @mixin button-text-m($color: $primary-text-color-dark) {
   color: $color;
+  text-decoration: none;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 16px;
@@ -237,6 +238,7 @@
 
 @mixin button-text-s($color: $primary-text-color-dark) {
   color: $color;
+  text-decoration: none;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
