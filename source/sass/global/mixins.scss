@@ -1,0 +1,244 @@
+@mixin indent-reset() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin list-reset() {
+  @include indent-reset();
+  list-style: none;
+}
+
+@mixin h1($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 77px;
+    line-height: 77px;
+  }
+}
+
+@mixin h2($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+@mixin h3($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+@mixin h4($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 100px;
+  }
+}
+
+@mixin h5($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+@mixin h6($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@mixin h7($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin text-l($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+@mixin text-m($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin text-s($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@mixin text-xs($color: $primary-text-color-dark) {
+  @media (min-width: $tablet-width) {
+    color: $color;
+    font-family: $primary-font;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@mixin caption-l($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+@mixin caption-m($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+}
+
+@mixin caption-s($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}
+
+@mixin button-text-l($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@mixin button-text-m($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+@mixin button-text-s($color: $primary-text-color-dark) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
