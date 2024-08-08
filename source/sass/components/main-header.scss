@@ -9,7 +9,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 0;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 226px);

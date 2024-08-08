@@ -12,7 +12,7 @@ const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
 bar1.start(files.length, 0);
 const work = files.map(async (file) => {
   const { dir, name, ext } = path.parse(file);
-  const outputDir = path.join(dir, 'optimized');
+  const outputDir = path.join(dir);
 
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
@@ -22,6 +22,18 @@ const work = files.map(async (file) => {
   const outputFile2x = path.join(outputDir, `${name}@2x${ext}`);
   const outputFileWebp1x = path.join(outputDir, `${name}@1x.webp`);
   const outputFileWebp2x = path.join(outputDir, `${name}@2x.webp`);
+
+  // Check if the optimized files already exist
+  if (fs.existsSync(outputFile1x) && fs.existsSync(outputFile2x) && fs.existsSync(outputFileWebp1x) && fs.existsSync(outputFileWebp2x)) {
+    bar1.increment();
+    return;
+  }
+
+  // Skip files with '@' in the name
+  if (name.includes('@')) {
+    bar1.increment();
+    return;
+  }
 
   // Read the original image
   const image = sharp(file);

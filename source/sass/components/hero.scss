@@ -1,0 +1,248 @@
+.hero {
+  overflow: hidden;
+  position: relative;
+  background-color: $primary-button-background-color;
+  color: $primary-text-color-light;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__list {
+  @include list-reset();
+}
+
+.hero__title {
+  @include indent-reset();
+  @include h2($primary-text-color-light);
+  text-align: center;
+  padding-bottom: 15px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    @include h1($primary-text-color-light);
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 944px;
+    text-align: left;
+    padding-bottom: 25px;
+  }
+}
+
+.hero__description {
+  @include indent-reset();
+  @include text-l($primary-text-color-light);
+  padding-bottom: 60px;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 103px;
+    padding-right: 103px;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 465px;
+    text-align: left;
+    padding: 0 0 35px;
+  }
+}
+
+.hero__see {
+  margin: 0 auto;
+  display: block;
+  min-width: 181px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 132px 0;
+  }
+}
+
+.hero__item {
+  padding-top: 144.5px;
+  padding-bottom: 114.5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 342px;
+    padding-bottom: 402px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+}
+
+.hero__br {
+  display: none;
+}
+
+@media (max-width: $mobile-width-max) {
+  .hero__br--mobile {
+    display: block;
+    content: "";
+  }
+}
+
+@media ((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+  .hero__br--tablet {
+    display: block;
+    content: "";
+  }
+}
+
+.hero__item--photo-cards {
+  @media (min-width: $tablet-width) {
+    padding-top: 137px;
+    padding-bottom: 197px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15px;
+  right: -15px;
+  width: 320px;
+  height: 568px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 1034px;
+    left: -45px;
+    right: -45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 800px;
+    left: -120px;
+    right: -120px;
+  }
+}
+
+.hero__settings {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    @include list-reset();
+    gap: 10px;
+
+  }
+}
+
+.hero__setting {
+  @include text-xs($primary-text-color-light);
+  padding: 14px 20px;
+  border: 1px solid $primary-settings-border;
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  max-width: 600px;
+  flex-wrap: wrap;
+}
+
+.hero__setting::before {
+  background-color: $primary-icons-color-light;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+.hero__setting--time::before {
+  mask-image: url("/__spritemap#sprite-moon-view");
+}
+
+.hero__setting--difficulty::before {
+  mask-image: url("/__spritemap#sprite-level-view");
+}
+
+.hero__pagination {
+  display: flex;
+  position: absolute;
+  gap: 20px;
+  max-width: 320px;
+  flex-wrap: wrap;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 120px;
+    transform: none;
+    left: initial;
+    bottom: 91px;
+  }
+}
+
+.swiper-pagination-bullet {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $primary-pagination;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary-pagination;
+}
+
+.hero__photo-cards {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 45px;
+    width: 442px;
+    position: relative;
+    height: 365px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    height: 459px;
+    position: absolute;
+    margin: 0;
+    top: 185px;
+    right: 0;
+    padding: 0;
+  }
+}
+
+.hero__traveler {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+
+  @media (min-width: $desktop-width) {
+    bottom: 0;
+  }
+}

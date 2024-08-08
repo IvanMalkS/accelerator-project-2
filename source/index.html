@@ -39,17 +39,92 @@
             </li>
           </ul>
         </nav>
-        <a href="tel:88000000000" class="main-header__phone">8 800 000-00-00</a>
+        <a class="main-header__phone" href="tel:88000000000">8 800 000-00-00</a>
       </div>
     </header>
-    <div id="hero" data-test="hero">hero</div>
-    <div id="tours" data-test="tours">tours</div>
-    <div id="training" data-test="training">training</div>
-    <div id="about" data-test="about">about</div>
-    <div id="reviews" data-test="reviews">reviews</div>
-    <div id="adv" data-test="adv">adv</div>
-    <div id="gallery" data-test="gallery">gallery</div>
-    <div id="form" data-test="form">form</div>
+    <main class="main-container">
+      <section class="hero" id="hero" data-test="hero">
+        <div class="hero__container container">
+          <ul class="hero__list swiper-wrapper">
+            <li class="hero__item swiper-slide">
+              <picture>
+                <source srcset="img/hero/mountain-mobile@1x.webp 1x, img/hero/mountain-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/jpeg" width="320" height="568">
+                <source srcset="img/hero/mountain-desktop@1x.webp 1x, img/hero/mountain-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp" width="1440" height="800">
+                <source srcset="img/hero/mountain-tablet@1x.webp 1x, img/hero/mountain-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="768" height="1034">
+                <source srcset="img/hero/mountain-desktop@1x.jpg 1x, img/hero/mountain-desktop@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg" width="1440" height="800">
+                <source srcset="img/hero/mountain-tablet@1x.jpg 1x, img/hero/mountain-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" width="768" height="1034">
+                <img class="hero__image" src="img/hero/mountain-mobile@1x.jpg" srcset="img/hero/mountain-mobile@2x.jpg 2x" width="320" height="568" alt="Вершины Кавказа" loading="lazy">
+              </picture>
+              <h2 class="hero__title">Захватывающие вершины Кавказа</h2>
+              <p class="hero__description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход<span class="hero__br hero__br--mobile"></span> на вершину горы Чегет.</p>
+              <button class="hero__see button" type="button">Смотреть тур</button>
+              <ul class="hero__settings">
+                <li class="hero__setting hero__setting--time">6 дней/5 ночей</li>
+                <li class="hero__setting hero__setting--difficulty">Высокая сложность</li>
+              </ul>
+            </li>
+            <li class="hero__item hero__item--photo-cards swiper-slide">
+              <picture>
+                <source srcset="img/hero/nature-mobile@1x.webp 1x, img/hero/nature-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/jpeg" width="320" height="568">
+                <source srcset="img/hero/nature-desktop@1x.webp 1x, img/hero/nature-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp" width="1440" height="800">
+                <source srcset="img/hero/nature-tablet@1x.webp 1x, img/hero/nature-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="768" height="1034">
+                <source srcset="img/hero/nature-desktop@1x.jpg 1x, img/hero/nature-desktop@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg" width="1440" height="800">
+                <source srcset="img/hero/nature-tablet@1x.jpg 1x, img/hero/nature-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" width="768" height="1034">
+                <img class="hero__image" src="img/hero/nature-mobile@1x.jpg" srcset="img/hero/nature-mobile@2x.jpg 2x" width="320" height="568" alt="Природа Кавказа" loading="lazy">
+              </picture>
+              <h2 class="hero__title">Невероятная природа Камчатки</h2>
+              <p class="hero__description">Незабываемое приключение,<span class="hero__br hero__br--mobile"></span> во время которого<span class="hero__br hero__br--tablet"></span> вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+              <button class="hero__see button" type="button">Смотреть тур</button>
+              <div class="hero__photo-cards">
+                <picture>
+                  <source srcset="img/hero/mountain-lake-desktop@1x.webp 1x, img/hero/mountain-lake-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp" width="308" height="407">
+                  <source srcset="img/hero/mountain-lake-tablet@1x.webp 1x, img/hero/mountain-lake-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="266" height="351">
+                  <source srcset="img/hero/mountain-lake-desktop@1x.png 1x, img/hero/mountain-lake-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/jpeg" width="308" height="407">
+                  <img class="hero__lake" src="img/hero/mountain-lake-tablet@1x.png" srcset="img/hero/mountain-lake-tablet@2x.png 2x" width="266" height="351" alt="Озеро в горах" loading="lazy">
+                </picture>
+                <picture>
+                  <source srcset="img/hero/mountain-traveler-desktop@1x.webp 1x, img/hero/mountain-traveler-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp" width="277" height="366">
+                  <source srcset="img/hero/mountain-traveler-tablet@1x.webp 1x, img/hero/mountain-traveler-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="236" height="312">
+                  <source srcset="img/hero/mountain-traveler-desktop@1x.png 1x, img/hero/mountain-traveler-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/jpeg" width="277" height="366">
+                  <img class="hero__traveler" src="img/hero/mountain-traveler-tablet@1x.png" srcset="img/hero/mountain-traveler-tablet@2x.png 2x" width="236" height="312" alt="Путник в горах" loading="lazy">
+                </picture>
+              </div>
+              <ul class="hero__settings">
+                <li class="hero__setting hero__setting--time">9 дней/10 ночей</li>
+                <li class="hero__setting hero__setting--difficulty">Средняя сложность</li>
+              </ul>
+            </li>
+            <li class="hero__item swiper-slide">
+              <picture>
+                <source srcset="img/hero/altai-landscapes-mobile@1x.webp 1x, img/hero/altai-landscapes-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/jpeg" width="320" height="568">
+                <source srcset="img/hero/altai-landscapes-desktop@1x.webp 1x, img/hero/altai-landscapes-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp" width="1440" height="800">
+                <source srcset="img/hero/altai-landscapes-tablet@1x.webp 1x, img/hero/altai-landscapes-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="768" height="1034">
+                <source srcset="img/hero/altai-landscapes-desktop@1x.jpg 1x, img/hero/altai-landscapes-desktop@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg" width="1440" height="800">
+                <source srcset="img/hero/altai-landscapes-tablet@1x.jpg 1x, img/hero/altai-landscapes-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" width="768" height="1034">
+                <img class="hero__image" src="img/hero/mountain-mobile@1x.jpg" srcset="img/hero/mountain-mobile@2x.jpg 2x" width="320" height="568" alt="Пейзажи Алтая" loading="lazy">
+              </picture>
+              <h2 class="hero__title">Магические пейзажи Алтайского Края</h2>
+              <p class="hero__description">Алтайский трекинг-тур —<span class="hero__br hero__br--mobile"></span> это захватывающее приключение с посещением магических<br> и захватывающих дух ландшафтов Алтайских гор.</p>
+              <button class="hero__see button" type="button">Смотреть тур</button>
+              <ul class="hero__settings">
+                <li class="hero__setting hero__setting--time">8 дней/7 ночей</li>
+                <li class="hero__setting hero__setting--difficulty">Лёгкая сложность</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="hero__pagination">
+            <span class="visually-hidden">Навигация по слайдам</span>
+          </div>
+        </div>
+      </section>
+      <div id="tours" data-test="tours">tours</div>
+      <div id="training" data-test="training">training</div>
+      <div id="about" data-test="about">about</div>
+      <div id="reviews" data-test="reviews">reviews</div>
+      <div id="adv" data-test="adv">adv</div>
+      <div id="gallery" data-test="gallery">gallery</div>
+      <div id="form" data-test="form">form</div>
+    </main>
     <div id="footer" data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>

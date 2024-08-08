@@ -9,8 +9,8 @@
     height: max-content;
     background-color: $secondary-background-color;
     min-width: $mobile-width;
+    z-index: 100;
   }
-
 }
 
 .main-nav--no-js {
