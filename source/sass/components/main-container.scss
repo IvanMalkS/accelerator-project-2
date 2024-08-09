@@ -1,3 +1,34 @@
 .main-container {
   flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: 346px 678px;
+  background-position: 179px 502px;
+  background-image: image-set(
+      url("./../../img/bg/clouds-mobile@1x.webp") 1x,
+      url("./../../img/bg/clouds-mobile@2x.webp") 2x,
+      url("./../../img/bg/clouds-mobile@1x.png") 1x,
+      url("./../../img/bg/clouds-mobile@2x.png") 2x
+  );
+
+  @media (min-width: $tablet-width) {
+  background-size: 602px 1630px;
+  background-position: 343px 941px;
+  background-image: image-set(
+      url("./../../img/bg/clouds-tablet@1x.webp") 1x,
+      url("./../../img/bg/clouds-tablet@2x.webp") 2x,
+      url("./../../img/bg/clouds-tablet@1x.png") 1x,
+      url("./../../img/bg/clouds-tablet@2x.png") 2x
+  );
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 602px 1630px;
+    background-position: 838px 674px;
+    background-image: image-set(
+        url("./../../img/bg/clouds-tablet@1x.webp") 1x,
+        url("./../../img/bg/clouds-tablet@2x.webp") 2x,
+        url("./../../img/bg/clouds-tablet@1x.png") 1x,
+        url("./../../img/bg/clouds-tablet@2x.png") 2x
+    );
+  }
 }

@@ -73,11 +73,6 @@
     font-size: 24px;
     line-height: 28px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 35px;
-    line-height: 100px;
-  }
 }
 
 @mixin h5($color: $primary-text-color-dark) {
@@ -186,8 +181,8 @@
 @mixin caption-l($color: $primary-text-color-dark) {
   color: $color;
   font-family: $primary-font;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 13px;
+  line-height: 13px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
@@ -220,6 +215,7 @@
   line-height: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.4px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

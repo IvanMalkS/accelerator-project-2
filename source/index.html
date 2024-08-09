@@ -43,6 +43,7 @@
       </div>
     </header>
     <main class="main-container">
+      <h1 class="visually-hidden">Lifetour - туристическая компания</h1>
       <section class="hero" id="hero" data-test="hero">
         <div class="hero__container container">
           <ul class="hero__list swiper-wrapper">
@@ -117,7 +118,210 @@
           </div>
         </div>
       </section>
-      <div id="tours" data-test="tours">tours</div>
+      <section class="tours" id="tours" data-test="tours">
+        <div class="tours__container container">
+          <div class="tours__wrapper">
+            <h2 class="tours__title">Ближайшие туры</h2>
+            <div class="tours__navigation">
+              <button class="tours__navigation-button tours__navigation-button--before">
+                <span class="visually-hidden">Показать предыдушие туры</span>
+              </button>
+              <button class="tours__navigation-button tours__navigation-button--next">
+                <span class="visually-hidden">Показать следуюшие туры</span>
+              </button>
+            </div>
+          </div>
+          <div class="tours__swiper">
+            <ul class="tours__list swiper-wrapper">
+              <li class="tours__item swiper-slide">
+                <picture>
+                  <source srcset="img/tours/elbrus@1x.webp 1x, img/tours/elbrus@2x.webp 2x" media="(min-width: 1px)" type="image/jpeg" width="290" height="416">
+                  <img class="tours__image" src="img/tours/elbrus@1x.jpg" srcset="img/tours/elbrus@2x.jpg 2x" width="290" height="416" alt="Эльбрус" loading="lazy">
+                </picture>
+                <div class="tours__text">
+                  <div class="tours__info">
+                    <p class="tours__place">Кавказ</p>
+                    <ul class="tours__stats">
+                      <li class="tours__stat tours__stat--days">4 дня</li>
+                      <li class="tours__stat tours__stat--nights">3 ночи</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours__name">Путешествие вокруг Эльбруса</h3>
+                  <ul class="tours__details">
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Сложность:</p>
+                      <ol class="tours__star-rating">
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">1 заполненая звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">2 заполненые звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">3 заполненых звезд рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">4 заполненых звезд рейтинга</span>
+                        </li>
+                        <li class="tours__star">
+                          <span class="visually-hidden">Назполненая звезда</span>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Даты набора:</p>
+                      <p class="tours__detail-value">12.06–19.06</p>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Группа</p>
+                      <p class="tours__detail-value">до 15 чел.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tours__item swiper-slide">
+                <picture>
+                  <source srcset="img/tours/belukha@1x.webp 1x, img/tours/belukha@2x.webp 2x" media="(min-width: 1px)" type="image/jpeg" width="290" height="416">
+                  <img class="tours__image" src="img/tours/belukha@1x.jpg" srcset="img/tours/belukha@2x.jpg 2x" width="290" height="416" alt="Подножье Белухи" loading="lazy">
+                </picture>
+                <div class="tours__text">
+                  <div class="tours__info tours__info--block">
+                    <p class="tours__place">Алтай</p>
+                    <ul class="tours__stats">
+                      <li class="tours__stat tours__stat--days">14 дней</li>
+                      <li class="tours__stat tours__stat--nights">13 ночей</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours__name">Путь к подножию Белухи</h3>
+                  <ul class="tours__details">
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Сложность:</p>
+                      <ol class="tours__star-rating">
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">1 заполненая звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">2 заполненые звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">3 заполненых звезд рейтинга</span>
+                        </li>
+                        <li class="tours__star">
+                          <span class="visually-hidden">Незаполненая звезда</span>
+                        </li>
+                        <li class="tours__star">
+                          <span class="visually-hidden">Незаполненая звезда</span>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Даты набора:</p>
+                      <p class="tours__detail-value">14.06–23.06</p>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Группа</p>
+                      <p class="tours__detail-value">до 25 чел.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tours__item swiper-slide">
+                <picture>
+                  <source srcset="img/tours/fisht@1x.webp 1x, img/tours/fisht@2x.webp 2x" media="(min-width: 1px)" type="image/jpeg" width="290" height="416">
+                  <img class="tours__image" src="img/tours/fisht@1x.jpg" srcset="img/tours/fisht@2x.jpg 2x" width="290" height="416" alt="Вершины Кавказа" loading="lazy">
+                </picture>
+                <div class="tours__text">
+                  <div class="tours__info tours__info--block">
+                    <p class="tours__place">Адыгея</p>
+                    <ul class="tours__stats">
+                      <li class="tours__stat tours__stat--days">7 дней</li>
+                      <li class="tours__stat tours__stat--nights">6 ночей</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours__name">Через Фишт<br> к Чёрному морю и обратно</h3>
+                  <ul class="tours__details">
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Сложность:</p>
+                      <ol class="tours__star-rating">
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">1 заполненая звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">2 заполненые звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">3 заполненых звезд рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">4 заполненых звезд рейтинга</span>
+                        </li>
+                        <li class="tours__star">
+                          <span class="visually-hidden">Назполненая звезда</span>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Даты набора:</p>
+                      <p class="tours__detail-value">15.07–19.07</p>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Группа</p>
+                      <p class="tours__detail-value">до 22 чел.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tours__item swiper-slide">
+                <picture>
+                  <source srcset="img/tours/manaraga@1x.webp 1x, img/tours/manaraga@2x.webp 2x" media="(min-width: 1px)" type="image/jpeg" width="290" height="416">
+                  <img class="tours__image" src="img/tours/manaraga@1x.jpg" srcset="img/tours/manaraga@2x.jpg 2x" width="290" height="416" alt="Вершины Кавказа" loading="lazy">
+                </picture>
+                <div class="tours__text">
+                  <div class="tours__info">
+                    <p class="tours__place">Урал</p>
+                    <ul class="tours__stats">
+                      <li class="tours__stat tours__stat--days">9 дней</li>
+                      <li class="tours__stat tours__stat--nights">10 ночей</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours__name">Восхождение Манарага</h3>
+                  <ul class="tours__details">
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Сложность:</p>
+                      <ol class="tours__star-rating">
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">1 заполненая звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">2 заполненые звезда рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">3 заполненых звезд рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">4 заполненых звезд рейтинга</span>
+                        </li>
+                        <li class="tours__star tours__star--filled">
+                          <span class="visually-hidden">5 заполненая звезда</span>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Даты набора:</p>
+                      <p class="tours__detail-value">12.06–19.06</p>
+                    </li>
+                    <li class="tours__detail">
+                      <p class="tours__detail-label">Группа</p>
+                      <p class="tours__detail-value">до 15 чел.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class="tours__show-all" href="/tours">Показать все туры</a>
+        </div>
+      </section>
       <div id="training" data-test="training">training</div>
       <div id="about" data-test="about">about</div>
       <div id="reviews" data-test="reviews">reviews</div>
